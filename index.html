@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thyroid Prediction</title>
+    <link rel="shortcut icon" href="./images/thyroid logo.jpg" type="image/x-icon">
+    <!--Bootstrap link-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!--Css link-->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <!-- Start of Header -->
+    <header class="headder_area">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="./index.html"><img src="./images/pexels-anna-tarazevich-8016903.jpg" alt="" width="150px" height="55px" class="thyroid_img"></a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/about_us.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/upcoming_projects.html">Upcoming projects</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn button btn-outline-success " type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!-- End of Header -->
+    <!-- Start of form -->
+    <div class="thyroid_form form body">
+      <h1 class="Heading" >Please enter the data below</h1>
+      <form action="{{ url_for('predict')}}" method="post" class="form-floating mb-3 ">
+        <!-- <div class="form-floating mb-3 "> -->
+            <!-- <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+        <div class="form-floating">
+            <input class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div> -->
+        <div class="form-floating">
+            <input class="form-control Data_Entry_1" id="Data_Entry_1" placeholder="Data Entry 1">
+            <label for="floatingInput">Data Entry 1</label>
+          </div>
+        <div class="form-floating">
+            <input class="form-control Data_Entry_2" id="Data_Entry_2" placeholder="Data Entry 2">
+            <label for="floatingInput">Data Entry 2</label>
+          </div>
+        <div class="form-floating">
+            <input class="form-control Data_Entry_3" id="Data_Entry_3" placeholder="Data Entry 3">
+            <label for="floatingInput">Data Entry 3</label>
+          </div>
+        <div class="form-floating">
+            <input class="form-control Data_Entry_4" id="Data_Entry_4" placeholder="Data Entry 4">
+            <label for="floatingInput">Data Entry 4</label>
+          </div>
+        <div class="form-floating">
+            <input class="form-control Data_Entry_5" id="Data_Entry_5" placeholder="Data Entry 5">
+            <label for="floatingInput">Data Entry 5</label>
+          </div>
+        <div class="form-floating">
+            <input class="form-control Data_Entry_6" id="Data_Entry_6" placeholder="Data Entry 6">
+            <label for="floatingInput">Data Entry 6</label>
+          </div>
+        <div class="form-floating">
+            <input class="form-control Data_Entry_7" id="Data_Entry_7" placeholder="Data Entry 7">
+            <label for="floatingInput">Data Entry 7</label>
+          </div>
+        <div class="form-floating">
+            <input class="form-control Data_Entry_8" id="Data_Entry_8" placeholder="Data Entry 8">
+            <label for="floatingInput">Data Entry 8</label>
+          </div>
+        <div class="form-floating">
+            <input class="form-control Data_Entry_9" id="Data_Entry_9" placeholder="Data Entry 9">
+            <label for="floatingInput">Data Entry 9</label>
+          </div>
+        <div class="form-floating">
+            <input class="form-control Data_Entry_10" id="Data_Entry_10" placeholder="Data Entry 10">
+            <label for="floatingInput">Data Entry 10</label>
+          </div>
+      <div class="form-floating">
+            <input class="form-control Data_Entry_11" id="Data_Entry_11" placeholder="Data Entry 11">
+            <label for="floatingInput">Data Entry 11</label>
+          </div>
+      <div class="form-floating">
+            <input class="form-control Data_Entry_12" id="Data_Entry_12" placeholder="Data Entry 12">
+            <label for="floatingInput">Data Entry 12</label>
+          </div>
+      <div class="form-floating">
+            <input class="form-control Data_Entry_13" id="Data_Entry_13" placeholder="Data Entry 13">
+            <label for="floatingInput">Data Entry 13</label>
+          </div>
+      <div class="form-floating">
+            <input class="form-control Data_Entry_14" id="Data_Entry_14" placeholder="Data Entry 14">
+            <label for="floatingInput">Data Entry 14</label>
+          </div>
+      <div class="form-floating">
+            <input class="form-control Data_Entry_15" id="Data_Entry_15" placeholder="Data Entry 15">
+            <label for="floatingInput">Data Entry 15</label>
+          </div>
+      <div class="form-floating">
+            <input class="form-control Data_Entry_16" id="Data_Entry_16" placeholder="Data Entry 16">
+            <label for="floatingInput">Data Entry 16</label>
+          </div>
+      <div class="form-floating">
+            <input class="form-control Data_Entry_17" id="Data_Entry_17" placeholder="Data Entry 17">
+            <label for="floatingInput">Data Entry 17</label>
+          </div>
+      <div class="form-floating">
+            <input class="form-control Data_Entry_18" id="Data_Entry_18" placeholder="Data Entry 18">
+            <label for="floatingInput">Data Entry 18</label>
+          </div>
+      <div class="form-floating">
+            <input class="form-control Data_Entry_19" id="Data_Entry_19" placeholder="Data Entry 19">
+            <label for="floatingInput">Data Entry 19</label>
+          </div>
+      <div class="form-floating">
+            <input class="form-control Data_Entry_20" id="Data_Entry_20" placeholder="Data Entry 20">
+            <label for="floatingInput">Data Entry 20</label>
+          </div>
+      <div class="form-floating">
+            <input  class="form-control Data_Entry_21" id="Data_Entry_21" placeholder="Data Entry 21">
+            <label for="floatingInput">Data Entry 21</label>
+          </div>
+      <div class="form-floating">
+            <input class="form-control Data_Entry_22" id="Data_Entry_22" placeholder="Data Entry 22">
+            <label for="floatingInput">Data Entry 22</label>
+          </div>
+      <div class="form-floating">
+            <input class="form-control Data_Entry_23" id="Data_Entry_23" placeholder="Data Entry 23">
+            <label for="floatingInput">Data Entry 23</label>
+          </div>
+      <div class="form-floating">
+            <input class="form-control Data_Entry_24" id="Data_Entry_24" placeholder="Data Entry 24">
+            <label for="floatingInput">Data Entry 24</label>
+          </div>
+    </div>
+    <div class="last-row">
+      <div class="form-floating lr">
+        <input class="form-control Data_Entry_25" id="Data_Entry_25" placeholder="Data Entry 25">
+        <label for="floatingInput">Data Entry 25</label>
+      </div>
+      <div class="form-floating lr">
+        <input class="form-control Data_Entry_26" id="Data_Entry_26" placeholder="Data Entry 26">
+        <label for="floatingInput">Data Entry 26</label>
+      </div>
+      <div class="form-floating lr">
+        <input class="form-control Data_Entry_27" id="Data_Entry_27" placeholder="Data Entry 27">
+        <label for="floatingInput">Data Entry 27</label>
+      </div>
+    </div>
+    <!-- Submit Button -->
+    <a href="./result.html" class="submit">
+      <button type="submit" id="submit" class="btn button Submit">Submit</button>
+    </a>
+  </form>
+<!-- End of form -->
+    
+</body>
+</html>
