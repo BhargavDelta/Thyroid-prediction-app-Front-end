@@ -1,0 +1,129 @@
+/* import fonts */
+@import url(./font.css);
+/* Css variables */
+@import url(./partials/_variables.css);
+
+/* =========================== Start of Header ===============================*/
+.navbar{
+    background: var(--gradient-color);
+}
+.nav-link{
+    font: normal 600 20px/2px var(--OpenSans);
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+.thyroid_img{
+    border-radius: 1rem;
+}
+/*============================ End of Header ================================== */
+
+/* =========================== Start of Form ================================= */
+.Heading{
+    color: lightgrey;
+    font: normal bold 45px/80px var(--new);
+    text-transform: uppercase;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+body{
+    background: url(/images/thyroid-problems-banner-bg.jpg) no-repeat 50% 0%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.form-floating{
+    margin: 10px;
+    align-self: center;
+    opacity: 0.9;
+    /*  */
+    display: grid;
+    grid-column: auto;
+    align-self: center;
+    justify-content: center;
+    grid: auto-flow / 1fr 1fr 1fr 1fr;
+    margin-left: 88px;
+
+
+}
+
+.last-row{
+    display: flex;
+    flex-direction: row;
+    margin-left: 185px;
+}
+
+.form-control{
+    width: 200px;
+    /* background: var(--gradient-color); */
+}
+
+
+
+
+/* Buttons */
+.button{
+    padding: .8rem 2.2rem;
+    font: normal 500 16px/20px var(--OpenSans);
+    position: relative;
+    border: 3px solid;
+    border-radius: 0.7rem;
+    border-color: #033F79;
+    /*  */
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: background .6s ease;
+    box-shadow: var(--box-shadow);
+
+}
+.button:hover{
+    background: whitesmoke;
+    background-clip: padding-box;
+    color:  black;
+}
+.button::after{
+    position: absolute;
+    top: -2px; left: -2px;
+    bottom: -2px; right:-2px;
+    background: var(--gradient-color);
+    content: '';
+    z-index: -1;
+    border-radius: 4px;
+}
+
+.me-2{
+    background: whitesmoke;
+}
+/* ========================= Up Coming projects ========================================= */
+.coming_soon{
+    display: flex;
+    justify-content: center;
+    color: wheat;
+    text-transform: uppercase;
+    font-size: 100px;
+    padding-top: 300px;
+    font-family: var(--new);
+}
+
+
+
+.predict-again{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.submit{
+    padding-top: 90px;
+    margin-left: 46.4%;
+}
+/* ================================Media queries =========================== */
+@media screen and (min-width:320px) and (max-width:480px) {
+
+
+}
+

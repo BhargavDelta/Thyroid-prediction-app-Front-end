@@ -1,0 +1,9 @@
+/* font face */
+@font-face {
+    font-family: "OpenSans";
+    src: url(../fonts/OpenSans-SemiBold.ttf);
+}
+@font-face {
+    font-family: "New";
+    src: url(../fonts2/RubikMaze-Regular.ttf);
+}
